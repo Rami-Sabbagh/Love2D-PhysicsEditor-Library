@@ -1,0 +1,104 @@
+<exporter>
+	<name>love2d_json</name>
+	<displayName>Love2d (JSON)</displayName>
+	<description>Exporter for Love2d, JSON</description>
+	<version>2.0</version>
+	<yAxisDirection>down</yAxisDirection>
+	<physicsEngine>box2d</physicsEngine>
+	<template>love2d.json</template>
+	<fileExtension>json</fileExtension>
+	<anchorPoint>
+		<enabled>no</enabled>
+	</anchorPoint>
+	<origin>
+		<type>fixed</type>
+		<relX>0.0</relX>
+		<relY>1.0</relY>
+	</origin>
+	<supportsCircles>yes</supportsCircles>
+	<global>
+	</global>
+	<body>
+		<parameter>
+			<name>fixedRotation</name>
+			<displayName>Fixed Rotation</displayName>
+			<shortDescription>Does the body have a fixed rotation ?</shortDescription>
+			<type>bool</type>
+			<default>false</default>
+			<bitfield>no</bitfield>
+		</parameter>
+		<parameter>
+			<name>static</name>
+			<displayName>Static</displayName>
+			<shortDescription>Is the body static by default ?</shortDescription>
+			<type>bool</type>
+			<default>false</default>
+			<bitfield>no</bitfield>
+		</parameter>
+		<parameter>
+			<name>gravityScale</name>
+			<displayName>Gravity Scale</displayName>
+			<shortDescription>The gracity scale of the object</shortDescription>
+			<type>float</type>
+			<min>-10</min>
+			<max>10</max>
+			<default>1</default>
+			<bitfield>no</bitfield>
+		</parameter>
+	</body>
+	<fixture>
+		<parameter>
+			<name>density</name>
+			<displayName>Density</displayName>
+			<shortDescription>The density of this fixture.</shortDescription>
+			<type>float</type>
+			<min>0.1</min>
+			<max>1000</max>
+			<default>1.0</default>
+			<bitfield>no</bitfield>
+		</parameter>
+		<parameter>
+            <name>friction</name>
+            <displayName>Friction</displayName>
+            <type>float</type>
+            <min>0.0</min>
+            <max>1000</max>
+            <default>0.0</default>
+			<bitfield>no</bitfield>
+        </parameter>
+		<parameter>
+			<name>restitution</name>
+			<displayName>Restitution</displayName>
+			<type>float</type>
+			<min>0.0</min>
+			<max>1.0</max>
+			<default>0.0</default>
+			<bitfield>no</bitfield>
+		</parameter>
+		
+		<parameter>
+            <name>filter_bitfield</name>
+            <type>bitfield</type>
+            <size>16</size>
+        </parameter>
+		<parameter>
+            <name>filter_categoryBits</name>
+            <displayName>Cat.</displayName>
+            <description>Collision category</description>
+            <shortDescription>Collision category</shortDescription>
+            <type>uint16</type>
+            <default>1</default>
+            <bitfield>yes</bitfield>
+        </parameter>
+        <parameter>
+            <name>filter_maskBits</name>
+            <displayName>Mask</displayName>
+            <description>Collision mask</description>
+            <shortDescription>Collision mask</shortDescription>
+            <type>uint16</type>
+            <default>65535</default>
+            <bitfield>yes</bitfield>
+        </parameter>
+	</fixture>
+
+</exporter>

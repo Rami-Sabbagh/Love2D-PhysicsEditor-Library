@@ -1,0 +1,21 @@
+{ {% for body in bodies %} {% if not forloop.first %}, {% endif %}
+	"{{body.name}}": {
+		"static": {{body.static}},
+		"fixedRotation": {{body.fixedRotation}},
+		"gravityScale": {{body.gravityScale}},
+		"fixtures": [ {% for fixture in body.fixtures %}{% if not forloop.first %} ,{% endif %} {% if fixture.isCircle %}
+			{
+				"density": {{fixture.density}}, "friction": {{fixture.friction}}, "restitution": {{fixture.restitution}},
+				"filter": { "categoryBits": {{fixture.filter_categoryBits}}, "maskBits": {{fixture.filter_maskBits}} },
+				"type": "Circle",
+				"shape": { "radius": {{fixture.radius}}, "x": {{fixture.center.x}}, "y": {{fixture.center.y}} }
+			}{% else %}{% for polygon in fixture.polygons %}{% if not forloop.first %},{% endif %}
+			{
+				"density": {{fixture.density}}, "friction": {{fixture.friction}}, "restitution": {{fixture.restitution}},
+				"filter": { "categoryBits": {{fixture.filter_categoryBits}}, "maskBits": {{fixture.filter_maskBits}} },
+				"type": "Polygon",
+				"shape": [ {% for point in polygon %} {% if not forloop.first %}, {% endif %} {{point.x}}, {{point.y}} {% endfor %} ]
+			} {% endfor %} {% endif %} {% endfor %}
+		]
+	} {% endfor %}
+}
