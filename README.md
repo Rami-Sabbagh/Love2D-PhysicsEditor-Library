@@ -1,2 +1,2 @@
-# Love2D-PhysicsEditor-Library
-PhysicsEditor loading &amp; exporting library.
+# LÖVE PhysicsEditor Loading Library
+PhysicsEditor loading & exporting library.
