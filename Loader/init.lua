@@ -155,7 +155,7 @@ local PELoader = {}
 -- @param #number y The y position to create the object at.
 -- @return PEObject#PEObject The new loaded PhysicsEditor Object instace.
 function PELoader.loadPath(image,world,part,path,x,y)
-  local JSONData = JSON.decode(love.filesystem.load(path))
+  local JSONData = JSON:decode(love.filesystem.read(path))
   return PEObject(image,world,JSONData[part],x,y)
 end
 
@@ -172,7 +172,7 @@ end
 -- @param #number y The y position to create the object at.
 -- @return PEObject#PEObject The new loaded PhysicsEditor Object instace.
 function PELoader.loadJSON(image,world,part,rawJSON,x,y)
-  local JSONData = JSON.decode(rawJSON)
+  local JSONData = JSON:decode(rawJSON)
   return PEObject(image,world,JSONData[part],x,y)
 end
 
