@@ -1,4 +1,4 @@
-{ {% for body in bodies %} {% if not forloop.first %}, {% endif %}
+{{% for body in bodies %} {% if not forloop.first %}, {% endif %}
 	"{{body.name}}": {
 		"static": {{body.static}},
 		"fixedRotation": {{body.fixedRotation}},
