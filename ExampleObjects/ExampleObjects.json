@@ -1,0 +1,141 @@
+{  
+	"DebrisStone": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   56.5, 38  ,  25, 51.5  ,  18, 51.5  ,  -0.5, 27  ,  -0.5, 22  ,  28, -0.5  ,  55, 7.5  ]
+			}   
+		]
+	}  , 
+	"DebrisWood": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   26, 55.5  ,  3, 41.5  ,  30, 6.5  ,  34, 6.5  ,  60, 8.5  ,  63.5, 17  ,  37.5, 50  ,  32.5, 55  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   49, 0.5  ,  60, 8.5  ,  34, 6.5  ,  43, -0.5  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   63.5, 17  ,  60, 8.5  ,  63.5, 13  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   -0.5, 33  ,  10.5, 3  ,  30, 6.5  ,  3, 41.5  ,  -0.5, 37  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   30, 6.5  ,  10.5, 3  ,  18, 1.5  ]
+			}   
+		]
+	}  , 
+	"Explosive": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": -1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 4, "maskBits": 65533 },
+				"type": "Polygon",
+				"shape": [   8, -0.5  ,  63, -0.5  ,  69.5, 6  ,  69.5, 42  ,  64.5, 48  ,  3.5, 20  ,  -0.5, 16  ,  -0.5, 6  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 4, "maskBits": 65533 },
+				"type": "Polygon",
+				"shape": [   69.5, 63  ,  65.5, 68  ,  63, 69.5  ,  47, 66.5  ,  -0.5, 24  ,  3.5, 20  ,  64.5, 48  ,  69.5, 54  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 4, "maskBits": 65533 },
+				"type": "Polygon",
+				"shape": [   47, 66.5  ,  63, 69.5  ,  51, 69.5  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 4, "maskBits": 65533 },
+				"type": "Polygon",
+				"shape": [   -0.5, 63  ,  -0.5, 24  ,  47, 66.5  ,  44, 69.5  ,  6, 69.5  ]
+			}   
+		]
+	}  , 
+	"AlienBeige": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Circle",
+				"shape": { "radius": 34.132096331752, "x": 35.1077943615257, "y": 34.5605306799337 }
+			} 
+		]
+	}  , 
+	"AlienBlue": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   8, -0.5  ,  63, -0.5  ,  69.5, 6  ,  69.5, 63  ,  63, 69.5  ,  6, 69.5  ,  -0.5, 63  ,  -0.5, 6  ]
+			}   
+		]
+	}  , 
+	"AlienPink": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0.5,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   7, -0.5  ,  8, -0.5  ,  6, 69.5  ,  -0.5, 63  ,  -0.5, 6  ]
+			} ,
+			{
+				"density": 1, "friction": 1, "restitution": 0.5,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   69.5, 6  ,  69.5, 63  ,  63, 69.5  ,  6, 69.5  ,  8, -0.5  ,  64, -0.5  ]
+			}   
+		]
+	}  , 
+	"DebrisGlass": {
+		"static": false,
+		"fixedRotation": true,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 1, "restitution": 0,
+				"filter": { "categoryBits": 2, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   56.5, 38  ,  25, 51.5  ,  18, 51.5  ,  -0.5, 27  ,  -0.5, 22  ,  28, -0.5  ,  55, 7.5  ]
+			}   
+		]
+	} 
+}
