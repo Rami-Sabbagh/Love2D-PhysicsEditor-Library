@@ -8,7 +8,7 @@ Loader = require("Loader")
 
 _Path = "/ExampleObjects/"
 _SheetName = "ExampleObjects.json"
-_ObjectsNames = {"AlienBeige","AlienBlue","AlienPink","DebrisGlass","DebrisStone","DebrisWood","Explosive"} --Fill in your objects names
+_ObjectsNames = {"AlienBeige","AlienBlue","AlienPink","DebrisGlass","DebrisStone","DebrisWood","Explosive", "AlienTwins"} --Fill in your objects names
 
 --====CONFIG END====--
 

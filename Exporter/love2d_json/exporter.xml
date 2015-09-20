@@ -77,6 +77,15 @@
 		</parameter>
 		
 		<parameter>
+			<name>isSensor</name>
+			<displayName>Is Sensor</displayName>
+			<shortDescription>Fixture reports contacts, but does not collide</shortDescription>
+			<type>bool</type>
+			<default>false</default>
+			<bitfield>no</bitfield>
+		</parameter>
+
+		<parameter>
             <name>filter_bitfield</name>
             <type>bitfield</type>
             <size>16</size>

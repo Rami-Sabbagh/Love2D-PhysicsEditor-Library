@@ -84,6 +84,7 @@ function PEObject:init(image,world,model,x,y)
     fixture:setRestitution(v.restitution)
     fixture:setFilterData(v.filter.categoryBits,v.filter.maskBits,0)
     fixture:setUserData({Type="PhysicsEditor"})
+    fixture:setSensor(v.isSensor)
     table.insert(self.shapes,shape)
     table.insert(self.fixtures,fixture)
   end
