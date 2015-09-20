@@ -45,6 +45,14 @@
 			<default>1</default>
 			<bitfield>no</bitfield>
 		</parameter>
+		<parameter>
+			<name>userData</name>
+			<displayName>User Data</displayName>
+			<shortDescription>String stored in body's user data. Can be used to identify bodies.</shortDescription>
+			<type>string</type>
+			<default></default>
+			<bitfield>no</bitfield>
+		</parameter>
 	</body>
 	<fixture>
 		<parameter>
@@ -74,8 +82,7 @@
 			<max>1.0</max>
 			<default>0.0</default>
 			<bitfield>no</bitfield>
-		</parameter>
-		
+		</parameter>		
 		<parameter>
 			<name>isSensor</name>
 			<displayName>Is Sensor</displayName>
@@ -84,7 +91,24 @@
 			<default>false</default>
 			<bitfield>no</bitfield>
 		</parameter>
-
+		<parameter>
+			<name>userData</name>
+			<displayName>User Data</displayName>
+			<shortDescription>String stored in fixture's user data. Can be used to identify fixtures.</shortDescription>
+			<type>string</type>
+			<default></default>
+			<bitfield>no</bitfield>
+		</parameter>
+		<parameter>
+			<name>groupIndex</name>
+			<displayName>Group Index</displayName>
+			<shortDescription>The collision group of this fixture.</shortDescription>
+			<type>int</type>
+			<default>0</default>
+			<bitfield>no</bitfield>
+			<min>-32768</min>
+			<max>32767</max>
+		</parameter>
 		<parameter>
             <name>filter_bitfield</name>
             <type>bitfield</type>

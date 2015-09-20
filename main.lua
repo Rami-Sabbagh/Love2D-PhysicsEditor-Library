@@ -102,7 +102,6 @@ function BuildWorld(world)
     
     local object = {}
     object.body = love.physics.newBody( World, xS, yS, type )
-    object.body:setMass(5)
     object.shape = love.physics.newEdgeShape( 0, 0, xE, yE )
     object.fixture = love.physics.newFixture( object.body, object.shape, 1 )
     object.fixture:setRestitution(0)
