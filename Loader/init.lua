@@ -67,7 +67,7 @@ function PEObject:init(image,world,model,x,y)
   
   self.body:setFixedRotation(self.model.fixedRotation)
   self.body:setGravityScale(self.model.gravityScale)
-  
+  self.body:setUserData({id=self.model.userData});
   self.shapes = {}
   self.fixtures = {}
   
@@ -80,10 +80,12 @@ function PEObject:init(image,world,model,x,y)
     end
     fixture = love.physics.newFixture(self.body,shape)
     fixture:setDensity(v.density)
+    fixture:setGroupIndex(v.groupIndex)
     fixture:setFriction(v.friction)
     fixture:setRestitution(v.restitution)
     fixture:setFilterData(v.filter.categoryBits,v.filter.maskBits,0)
-    fixture:setUserData({Type="PhysicsEditor"})
+    fixture:setUserData({type="PhysicsEditor", id=v.userData})
+    fixture:setSensor(v.isSensor)
     table.insert(self.shapes,shape)
     table.insert(self.fixtures,fixture)
   end
